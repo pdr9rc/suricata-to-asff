@@ -1,0 +1,9 @@
+﻿[Unit]
+Description=Suricata display format to ASFF format
+
+[Service]
+Type=notify
+ExecStart=/root/SuricataToASFF/SuricataToASFF
+
+[Install]
+WantedBy=multi-user.target
