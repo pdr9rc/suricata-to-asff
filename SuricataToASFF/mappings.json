@@ -1,0 +1,68 @@
+﻿//{
+//  "CreatedAt": "#timestamp",
+//  "GeneratorId": "3CORESec MDR",
+//  "Malware.Name": "...",
+//  "Resources": {
+//    "lang": "cli/node/phyton",
+//    "path": "./code/GetAwsInstanceByPublicIp",
+//    "params": ["gateway_ip"]
+//  },
+//  "Severity": {
+//    "0": "LOW",
+//    "1": "MEDIUM",
+//    "3": "HIGH"
+//  },
+//  "Id": {
+//    "lang": "cli/node/phyton",
+//    "path": "./code/GenerateFindingId",
+//    "params": ["...", "..."]
+//  }
+//}
+
+{
+  "ValueTypes": {
+    "AwsAccountId": "1111111",
+    "GeneratorId": "3CORESec MDR",
+    "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/guardduty",
+    "Resources.Type": "AwsEc2Instance",
+    "Resources.Id": "i-cafebabe",
+    "Resources.Partition": "aws",
+    "Resources.Region": "us-west-2",
+    "Resources.Tags.billingCode": "Lotus-1-2-3",
+    "Resources.Tags.needsPatching": "true",
+    "Resources.Details.AwsEc2Instance.Type": "i3.xlarge",
+    "Resources.Details.AwsEc2Instance.ImageId": "ami-abcd1234",
+    "Resources.Details.AwsEc2Instance.KeyName": null,
+    "Resources.Details.AwsEc2Instance.IamInstanceProfileArn": null,
+    "Resources.Details.AwsEc2Instance.VpcId": null,
+    "Resources.Details.AwsEc2Instance.SubnetId": null,
+    "Resources.Details.AwsEc2Instance.LaunchedAt": null,
+    "SchemaVersion": "2018-10-08",
+    "Resources.Details.AwsEc2Instance.IpV4Addresses": [
+      "54.194.252.215",
+      "192.168.1.88"
+    ],
+    "Resources.Details.AwsEc2Instance.IpV6Addresses": [
+      "2001:db8:1234:1a2b::123"
+    ]
+  },
+  "FieldTypes": {
+    "CreatedAt": "timestamp",
+    "Description": "alert.category",
+    "Id": "alert.signature_id",
+    "Severity.Original": "alert.severity",
+    "Title": "alert.signature",
+    "Types": "alert.metadata.former_category",
+    "UpdatedAt": "timestamp"
+  },
+  "DictTypes": {
+    "Severity.Label": {
+      "Field": "alert.metadata.signature_severity",
+      "Dictionary": {
+        "0": "LOW",
+        "1": "MEDIUM",
+        "3": "HIGH"
+      }
+    }
+  }
+}
